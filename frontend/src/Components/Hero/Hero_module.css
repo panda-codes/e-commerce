@@ -1,0 +1,66 @@
+.hero{
+    height: 100vh;
+    background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);/* this is for color blending the first parameter
+    is the degree 180 means horizontal blending, while 90 is vertical.
+    2. the second and third parameters are the colors 
+    3. the fourth parameter is the area the first color will cover*/
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.hero_left{
+    flex: 1;/*this is the ratio it will cover in its parent container*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 180px;
+    line-height: 1.1;
+}
+
+.hero_left h2{
+    color: #090909;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.hero_left p{
+    color: #171717;
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.hero-hand-icon{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-hand-icon img{
+    width: 105px;
+}
+
+.hero-left-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 310px;
+    height: 70px;
+    border-radius: 75px;
+    margin-top: 30px;
+    background-color: #ff4141;
+}
+
+.hero_right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_right img{
+    width: 53%;
+    margin-left: -150px;
+    margin-bottom: -70px;
+}
