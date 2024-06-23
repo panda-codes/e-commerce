@@ -3,13 +3,13 @@ import './CSS/LoginSignup.css'
 
 const LoginSignup = () => {
   return (
-    <div className='loginsignUp'>
-      <div className="loginsignUp-container">
+    <div className='loginsignup'>
+      <div className="loginsignup-container">
         <h1>Sign Up</h1>
         <div className="loginsignup-fields">
-          <input type="text" />
-          <input type="email" />
-          <input type="password" />
+          <input type="text" placeholder='Your Name'/>
+          <input type="email" placeholder='Email Address'/>
+          <input type="password" placeholder='Password'/>
         </div>
         <button>Continue</button>
         <p className='loginsignup-login'>Already have an account? <span>Login</span></p>
