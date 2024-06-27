@@ -3,14 +3,16 @@
 import React from 'react'
 import './Breadcrum.css'
 import arrow_icon from '../Assets/breadcrum_arrow.png'
+// import { useParams } from 'react-router-dom';
+
 
 const Breadcrum = (props) => {
 
-    const {product} = props;
+    const productr =  props.product.find((e)=>e.id=== Number(props.productId));
 
   return (
     <div className='breadcrum'>
-      HOME <img src={arrow_icon} alt="" /> SHOP <img src={arrow_icon} alt="" /> {product?.category||'default category'} <img src={arrow_icon} alt="" /> {product?.name||'default name'}
+      HOME <img src={arrow_icon} alt="" /> SHOP <img src={arrow_icon} alt="" /> {productr.category} <img src={arrow_icon} alt="" /> {productr.name}
     </div>
   )
 }
