@@ -17,10 +17,10 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <Navbar/>
+        <Navbar/>{/*THIS COMPONENT WILL BE DISPLAYED NO MATTER THE ROUTE */}
         <Routes>
           <Route path='/' element={<Shop/>}/>
-          <Route path='/men' element={<ShopCategory banner={men_banner} category='men'/>}/>
+          <Route path='/men' element={<ShopCategory banner={men_banner} category='men'/>}/>{/*THIS COMPONENT WILL BE DISPLAYED NO MATTER THE ROUTE */}
           <Route path='/women' element={<ShopCategory banner={women_banner} category='women'/>}/>
           <Route path='/kids' element={<ShopCategory banner={kids_banner} category='kid'/>}/>
           <Route path='/product' element={<Product/>}>
@@ -29,7 +29,7 @@ function App() {
           <Route path='/cart' element={<Cart/>}/>
           <Route path='/login' element={<LoginSignup/>}/>
         </Routes>
-        <Footer/>
+        <Footer/>{/*THIS COMPONENT WILL BE DISPLAYED NO MATTER THE ROUTE */}
       </BrowserRouter>
     </div>
   );

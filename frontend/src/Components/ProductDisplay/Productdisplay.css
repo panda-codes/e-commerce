@@ -1,0 +1,120 @@
+/*  THE PRODUCT DISPLAY DIV */
+.productdisplay{
+    display: flex;
+    margin: 0px 170px;
+}
+
+/* PRODUCT DISPLAY LEFT HAND SIDE */
+.productdisplay-left{
+    display: flex;
+    gap: 17px;
+}
+
+/* PRODUC DISPLAY IMG-LIST */
+.productdisplay-img-list{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* PRODUCT DIPLAY THE IMG STYLING */
+.productdisplay-img-list img{
+    height: 163px;
+}
+
+/* PRODUCT DISPLAY MAIN IMG STYLING */
+.productdisplay-main-img{
+    width: 586px;
+    height: 700px;
+}
+
+/* PRODUCT DISPLAY RIGHT DIV STYLING */
+.productdisplay-right{
+    margin: 0px 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* PRODUCTDISPLAY-RIGHT H1 */
+.productdisplay-right h1{
+    color: #3d3d3d;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+/* PRODUCTDISPLAY-RIGHT STARS */
+.productdisplay-right-stars{
+    display: flex;
+    align-items: center;
+    margin: 13px;
+    gap: 5px;
+    color: #1c1c1c;
+    font-size: 16px;
+}
+
+/* PRODUCTDISPLAY-RIGHT-PRICES DIV */
+.productdisplay-right-prices{
+    display: flex;
+    margin: 40px 0px;
+    gap: 30px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* PRODUCTDISPLAY-RIGHT-PRICE-OLD */
+.productdisplay-right-price-old{
+    color: #818181;
+    text-decoration: line-through;
+}
+
+/* PRODUCTDISPLAY-RIGHT-PRICE-NEW */
+.productdisplay-right-price-new{
+    color: #ff4141;
+}
+
+/* PRODUCTDISPLAY-RIGHT-SIZE H1 */
+.productdisplay-right-size h1{
+    margin-top: 55px;
+    content: #656565;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* PRODUCTDISPLAY-RIGHT-SIZES */
+.productdisplay-right-sizes{
+    display: flex;
+    margin: 30px 0px;
+    gap: 20px;
+}
+
+/* PRODUCTDISPLAY-RIGHT-SIZES CHILDREN DIVS */
+.productdisplay-right-sizes div{
+    padding: 18px 24px;
+    background: #fbfbfb;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* ADD TO CART BUTTON */
+.productdisplay-right button{
+    padding: 20px 40px;
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background: #ff4141;
+    margin-bottom: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* PRODUCTDISPLAY-RIGHT CATEGORY */
+.productdisplay-right-category{
+    margin-top: 10px;
+}
+
+.productdisplay-right-category span{
+    font-weight: 600;
+}
