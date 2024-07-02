@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import cart_icon from "./Assets/cart_icon.png";
 import "./Navbar_module.css";
 import { Link } from "react-router-dom";
+import { ShopContext } from "../Context/ShopContext";
 
 const Navbar = () => {
 
     const[menu,setMenu] = useState("shop");//this state is used with the ternary operator to select an option in the the navmenu
+    const {getTotalCartItems} = useContext(ShopContext);
 
   return (
     <div className="navbar container1">
@@ -21,7 +23,7 @@ const Navbar = () => {
       <div className="login-cart">
         <button> <Link to="/login">login</Link> </button>
         <Link to="/cart"><img src={cart_icon} alt="" /></Link>
-        <div className="navbar-count">0</div>
+        <div className="navbar-count">{getTotalCartItems()}</div>
       </div>
     </div>
   );
