@@ -9,8 +9,15 @@ const RelatedProducts = () => {
       <h1>Related Products</h1>
       <hr />
       <div className="relatedproducts-items">
-        {data_product.map((e,i)=>{ 
-            return <Items key ={i} id={e.id} name={e.name} img={e.image} new_price={e.new_price}  old_price={e.old_price} />
+        {data_product.map((item,i)=>{ 
+            return <Items
+            key={i}
+            id={item.id}
+            name={item.name}
+            img={item.image}
+            new_price={item.new_price}
+            old_price={item.old_price}
+          />
         })}
       </div>
     </div>
