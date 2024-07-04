@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    
     padding: 16px;
     /* background-color: #171717; */
     box-shadow: 0px 1px 3px -2px;
@@ -38,6 +39,10 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+}
+
+.nav-dropdown{
+    display: none;
 }
 
 .pee{
@@ -80,7 +85,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -35px;
+    margin-top: -35px;/*to move an item itself all you have to is use its negative margins*/
     margin-left: -55px;
     border-radius: 50%;
     font-size: 14px;
@@ -89,4 +94,91 @@
     /* position: absolute; */
     /* top: -10px; */
     /* right: -15px; */
+}
+
+/* MEDIA QUERY */
+@media (max-width:1280px) {
+    .navbar{
+        padding: 12px 50px;
+        gap: 50px;
+    }
+    .Nav-menu{
+        gap: 30px;
+        font-size: 16px;
+    }
+
+    .login-cart{
+        gap: 30px;
+    }
+
+    .login-cart button{
+        width: 120px;
+        height: 45px;
+        font-size: 16px;
+    }
+    .navbar-count{
+        margin-left: -40px;
+    }
+}
+
+@media (max-width:1024px) {
+    .navbar{
+        padding: 12px 30px;
+    }
+    .Nav-menu{
+        gap: 25px;
+        font-size: 14px;
+    }
+    .login-cart button{
+        width: 90px;
+        height: 35px;
+        font-size: 14px;
+    }
+    .navbar-count{
+        width: 18px;
+        height: 18px;
+    }
+}
+
+@media (max-width:800px) {
+    .navbar{
+        padding: 10px 0px;
+    }
+    .nav-dropdown{
+        display: block;
+        rotate: -90deg;
+        transition: 0.5s;
+    }
+    .Nav-menu{
+        display: none;
+        width: 100%;
+        height: 80px;
+        position: absolute;
+        justify-content: center;
+        background: white;
+        top: 60px;
+    }
+    .nav-menu-visible{/*this class was created by the useRef hook in the dropDownToggle function to toggle this class which is ref to the ul*/
+        display: flex;
+    }
+    .nav-dropdown.open{/*e.target class need to be joined with the original class as a selector*/
+        transform: rotate(90deg);
+    }
+}
+
+@media (max-width:500px) {
+    .navbar{
+        padding: 8px 0px;
+        gap: 0;
+    }
+    .brandlogo{
+        transform: scale(0.8);/*started using transform:scale() to reduce size of element*/
+    }
+    .Nav-menu{
+        height: 70px;
+        top: 50px;
+    }
+    .login-cart{
+        transform: scale(0.8);
+    }
 }
