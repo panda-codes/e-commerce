@@ -61,3 +61,30 @@
     height: 3px;
     background: #c7c7c7;
 }
+
+/* MEDIA QUERY */
+@media (max-width:800px) {
+    .footer{
+        gap:20px;
+    }
+    .footr-logo{
+        gap:10px;
+        align-items: end;
+    }
+    .footer-logo img{
+        width:40px;
+    }
+    .footer-logo p{
+        font-size:25px;
+    }
+    .footer-links{
+        font-size:14px;
+        gap:10px;
+    }
+    .footer-social-icon img{
+        width:22px;
+    }
+    .footer-copyrights{
+        font-size: 13px;
+    }
+}
