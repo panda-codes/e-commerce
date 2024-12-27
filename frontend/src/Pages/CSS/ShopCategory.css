@@ -77,3 +77,24 @@
     }
 }
 
+@media (max-width:800px) {
+    .shop-category-banner{
+        width: 90%;
+    }
+    .shopcategory-products{
+        width: 90%;
+    }
+    .shopcategory-loadmore{
+        margin: 60px auto;
+        width: 150px;
+        height: 40px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width:500px) {
+    .shopcategory-products{
+        grid-template-columns: 1fr 1fr;
+        width: 80%;
+    }
+}
