@@ -1,4 +1,4 @@
-import React from 'react'
+ import React from 'react'
 import './RelatedProducts.css'
 import data_product from '../Assets/data'
 import Items from '../Items/Items'
